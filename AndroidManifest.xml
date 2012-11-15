@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.sdu.demo"
+    android:configChanges="keyboardHidden|orientation"
+    android:screenOrientation="landscape"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.sdu.demo.DemoList"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.sdu.demo.UIActivity" >
+        </activity>
+        <activity android:name="org.sdu.demo.MapActivity" >
+        </activity>
+        <activity android:name="org.sdu.demo.SoundTest" >
+        </activity>
+        <activity android:name="org.sdu.demo.SensorTest" >
+        </activity>
+        <activity android:name="org.sdu.demo.BattleActivity" >
+        </activity>
+        <activity android:name="org.sdu.demo.DBTest" >
+        </activity>
+        <activity android:name="org.sdu.demo.gameText.GameTest" >
+        </activity>
+    </application>
+
+</manifest>
